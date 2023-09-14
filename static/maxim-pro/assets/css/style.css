@@ -30,11 +30,10 @@ h1 {
   font-family: "CormorantGaramond";
 }
 h3 {
-  font-family: "Victorian Parlor Vintage Alternate";
-  font-size: 40px;
-  color: #1b1818;
-  align-items: center;
-}
+    font-size: 3.5vw;  
+    font-family: "Raleway"; 
+    color: #fbf9ec; 
+  }
 
 h4 {
   font-family: "CormorantGaramond";
@@ -118,7 +117,7 @@ h7 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #1b1818;
+  color: #7b4c05;
   text-decoration: none;
 }
 
@@ -167,7 +166,7 @@ h7 {
   justify-content: space-between;
   padding: 12px 0;
   font-size: 14px;
-  color: rgba(5, 5, 5, 0.8);
+  color: #7b4c05;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -187,7 +186,7 @@ h7 {
   height: 2px;
   bottom: 3px;
   left: 0;
-  background-color: #ba2a47;
+  background-color: #970606;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -195,81 +194,11 @@ h7 {
 
 .navbar a:hover:before,
 .navbar li:hover>a:before,
-.navbar .active:before {
-  visibility: visible;
-  width: 100%;
-}
+
 
 .navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
 .navbar li:hover>a {
-  color: #ba2a47;
-}
-
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fbf9ec;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 500;
-  color: #100e05;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  color: #ba2a47;
-}
-
-.navbar .dropdown:hover>ul {
-  opacity: 1;
-  visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover>ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
-  }
+  color: #970606;
 }
 
 /**
@@ -331,9 +260,7 @@ h7 {
 
 .navbar-mobile a:hover:before,
 .navbar-mobile li:hover>a:before,
-.navbar-mobile .active:before {
-  visibility: hidden;
-}
+
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
@@ -343,7 +270,6 @@ h7 {
 }
 
 .navbar-mobile a:hover,
-.navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: #ba2a47;
 }
@@ -365,44 +291,23 @@ h7 {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: #ba2a47;
-}
-
-.navbar-mobile .dropdown>.dropdown-active {
-  display: block;
-}
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("/static/maxim-pro/assets/img/darkroses.png") center center;
+  background: url("/static/maxim-pro/assets/img/goldenroses.png") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
   padding: 0;
+  overflow: hidden;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.0);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -447,124 +352,10 @@ h7 {
   background: #ba2a47;
 }
 
-#hero2 {
-  width: 100%;
-  height: calc(100vh - 70px);
-  background: url("/static/maxim-pro/assets/img/madscientist.png") center center;
-  background-size: cover;
-  position: relative;
-  margin-top: 70px;
-  padding: 0;
-}
-
-#hero2:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero2 .container {
-  z-index: 2;
-}
-
-#hero2 h1 {
-  margin: 0 0 10px 0;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fbf9ec;
-}
-
-#hero2 h2 {
-  color: #fbf9ec;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
-
-#hero2 .btn-get-started {
-  font-family: "CormorantGaramond";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #fbf9ec;
-  color: #fbf9ec;
-}
-
-#hero2 .btn-get-started:hover {
-  border-color: #ba2a47;
-  background: #ba2a47;
-}
-
-#hero4 {
-  width: 100%;
-  height: calc(100vh - 70px);
-  background: url("/static/maxim-pro/assets/img/yay.png") center center;
-  background-size: cover;
-  position: relative;
-  margin-top: 70px;
-  padding: 0;
-}
-
-#hero4:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero4 .container {
-  z-index: 2;
-}
-
-#hero4 h1 {
-  margin: 0 0 10px 0;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fbf9ec;
-}
-
-#hero4 h2 {
-  color: #fbf9ec;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
-
-#hero4 .btn-get-started {
-  font-family: "CormorantGaramond";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #fbf9ec;
-  color: #fbf9ec;
-}
-
-#hero4 .btn-get-started:hover {
-  border-color: #ba2a47;
-  background: #ba2a47;
-}
-
 #hero5 {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("/static/maxim-pro/assets/img/shop.png") center center;
+  background: url("/static/maxim-pro/assets/img/terracota.png") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
@@ -573,7 +364,7 @@ h7 {
 
 #hero5:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -618,62 +409,7 @@ h7 {
   background: #ba2a47;
 }
 
-#hero3 {
-  width: 100%;
-  height: calc(100vh - 70px);
-  background: url("/static/maxim-pro/assets/img/gallery.png") center center;
-  background-size: cover;
-  position: relative;
-  margin-top: 70px;
-  padding: 0;
-}
 
-#hero3:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero3 .container {
-  z-index: 2;
-}
-
-#hero3 h1 {
-  margin: 0 0 10px 0;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fbf9ec;
-}
-
-#hero3 h2 {
-  color: #fbf9ec;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
-
-#hero3 .btn-get-started {
-  font-family: "CormorantGaramond";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #fbf9ec;
-  color: #fbf9ec;
-}
-
-#hero3 .btn-get-started:hover {
-  border-color: #ba2a47;
-  background: #ba2a47;
-}
 
 @media (min-width: 1024px) {
   #hero {
@@ -704,7 +440,7 @@ h7 {
 #hero6 {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("/static/maxim-pro/assets/img/stop.png") center center;
+  background: url("/static/maxim-pro/assets/img/orchids.png") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
@@ -713,7 +449,7 @@ h7 {
 
 #hero6:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -786,6 +522,57 @@ h7 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.path-container {
+  overflow: hidden;  
+  position: relative;  
+  width: 100%;
+  height: 30vw;  
+}
+
+.life-event {
+  position: absolute;
+  left: -100%;  
+  top: 0;
+  width: 50vw;  
+  height: 30vw;  
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  transition: left 3s;  
+}
+
+.life-event img {
+  display: block;
+  max-height: 30vw; 
+  max-width: 50vw;
+  object-fit: cover; 
+  justify-content: center;  
+  align-items: center;  
+}
+
+.description-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  font-family: "CormorantGaramond";
+  color: #fbf9ec;
+  font-size: 2vw;
+  padding: 8vw;
+  background-color: rgb(87, 20, 33, 0.4);
+}
+.description-box .life-title, .description-box p {
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -849,7 +636,7 @@ h7 {
 }
 
 /*--------------------------------------------------------------
-# Begin
+# General
 --------------------------------------------------------------*/
 .begin {
   background-color: #fbf9ec;
@@ -878,77 +665,6 @@ h7 {
   color: #848484;
   margin-left: 60px;
 }
-
-/*--------------------------------------------------------------
-# Create
---------------------------------------------------------------*/
-.object {
-  padding: 100px 0px 300px 0px;
-  background-color: hwb(0 67% 15%);
-}
-
-.medium {
-  padding: 100px 0px 300px 0px;
-  background-color: hwb(0 67% 15%);
-}
-
-.light {
-  padding: 100px 0px 300px 0px;
-  background-color: hwb(0 67% 15%);
-}
-
-.colors {
-  padding: 100px 0px 300px 0px;
-  background-color: hwb(0 67% 15%);
-}
-
-.mood {
-  padding: 100px 0px 300px 0px;
-  background-color: hwb(0 67% 15%);
-}
-
-.submit {
-  padding: 100px 0px 300px 0px;
-  background-color: hwb(0 67% 15%);
-  align-items: center;
-}
-
-input[type="text"] {
-  font-family: "CormorantGaramond";
-  color: #dd4c78;
-  font-size: 20px;
-  align-items: center;
-}
-
-input[type="password"] {
-  font-family: "CormorantGaramond";
-  color: #dd4c78;
-  font-size: 20px;
-}
-
-  .continue-button {
-    font-family: "CormorantGaramond";
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 28px;
-    border-radius: 4px;
-    transition: 0.5s;
-    border: 2px solid #ba2a47;
-    background: #ba2a47;
-    color: #fbf9ec;
-  }
-
-  .continue-button:hover {
-    background-color: #b6304e;
-  }
-
-  .continue-button:active {
-    background-color: #a52641;
-  }
-
 
 .bell-button {
   display: inline-block;
@@ -1014,165 +730,6 @@ input[type="password"] {
   transform: scale(1.2);
 }
 
-/*--------------------------------------------------------------
-# Loading
---------------------------------------------------------------*/
-
-#loading-text {
-  margin-top: 5vh;
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "Victorian Parlor Vintage Alternate";
-  color:#ba2a47;
-}
-
-/*--------------------------------------------------------------
-# F.A.Q
---------------------------------------------------------------*/
-.faq .container {
-  margin-top: 8vh;
-}
-
-.faq .faq-list {
-  padding: 0 100px;
-}
-
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li+li {
-  margin-top: 15px;
-}
-
-.faq .faq-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-  position: relative;
-}
-
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-}
-
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #ba2a47;
-}
-
-.faq .faq-list .icon-show,
-.faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list a.collapsed {
-  color: black;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #ba2a47;
-}
-
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
-}
-/*--------------------------------------------------------------
-# Shop
---------------------------------------------------------------*/
-
-.shop {
-  background-color: #fbf9ec;
-  align-items: center;
-  justify-content: center;
-}
-  
-
-/*--------------------------------------------------------------
-# Final Product
---------------------------------------------------------------*/
-
-#view .btn-get-started {
-  font-family: "CormorantGaramond";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #ba2a47;
-  background: #ba2a47;
-  color: #fbf9ec;
-}
-
-#view .btn-get-started:hover {
-  border-color: #801c30;
-  background: #801c30;
-}
-
-#shop-button {
-  font-family: "CormorantGaramond";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #ba2a47;
-  background: #ba2a47;
-  color: #fbf9ec;
-}
-
-#shop-button:hover {
-  border-color: #801c30;
-  background: #801c30;
-}
-
-
-#colorslist {
-  align-items: center
-}
-
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1184,38 +741,6 @@ input[type="password"] {
   margin-top: 10vw;
   margin-bottom: 5vw;
 }
-.color-square {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-family: "DM sans";
-  color: transparent;
-}
-
-.color-square:hover {
-  color: #fcf9ed;
-}
-
-.color-square::before {
-  content: attr(data-text);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.color-square:hover::before {
-  opacity: 1;
-}
-
-
 
 .download-button {
   font-family: "CormorantGaramond";
@@ -1230,6 +755,35 @@ input[type="password"] {
   border: 2px solid #ba2a47;
   background: #ba2a47;
   color: #fbf9ec;
+}
+
+.project-link {
+  position: relative;
+  display: inline-block;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  color: #ffffff; 
+  font-family: "CormorantGaramond";
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px 0;
+  transform: translateY(100%); /* Push it below the image initially */
+  transition: transform 0.3s ease; /* Animation effect */
+  opacity: 0;
+}
+
+.project-link:hover .project-title {
+  transform: translateY(0); /* Pull it back to cover the image bottom */
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -1247,22 +801,43 @@ input[type="password"] {
   margin: 0 auto; /* Center the grid container horizontally */
 }
 
+.social-links a {
+  font-size: 50px;
+  display: inline-block;
+  background: #7b4c05;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #c0760661;
+  color: #fff;
+  text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #023503;
+  background: #a96805;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
-  border-color: #18302c;
+  border-color: #995e06;
 }
 
 #footer .footer-top {
-  background: #034404;
-  border-bottom: 1px solid #18302c;
+  background: #ecd2ac;
+  border-bottom: 1px solid #ecd2ac;
   padding: 60px 0 30px 0;
-  border-color: #18302c;
+  border-color: #ecd2ac;
 }
 
 #footer .footer-top .footer-info {
@@ -1293,27 +868,6 @@ input[type="password"] {
   margin-bottom: 0;
   font-family: "CormorantGaramond";
   color: #fff;
-}
-
-#footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #ba2a47;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .footer-top .social-links a:hover {
-  background: #ba2a47b2;
-  color: #fff;
-  text-decoration: none;
 }
 
 #footer .footer-top h4 {

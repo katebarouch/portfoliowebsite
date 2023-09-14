@@ -1,11 +1,9 @@
 from flask import (Flask, render_template, request, flash, session,
                    redirect, jsonify, url_for)
-from model import connect_to_db, db, User, Plants
 from jinja2 import StrictUndefined
 from passlib.hash import argon2
 from flask import Flask
 from datetime import datetime
-import chatgpt_list_maker
 
 app = Flask(__name__)
 app.secret_key = "dev"
@@ -33,5 +31,4 @@ def portfolio():
     return render_template("portfolio.html")
 
 if __name__ == "__main__":
-    connect_to_db(app)
     app.run(port=3000)
