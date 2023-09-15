@@ -3,21 +3,21 @@
 
 {% block body %}
 
-<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+<section id="title" class="hero d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left aos-init aos-animate" data-aos="fade-up">
 
         <h1 class="title">SOFTWARE ENGINEER</h1>
-        <br>
-        <br>
 
-        <a href="#hero1" class="btn-get-started scrollto">learn about me</a>
+        <h3>& amateur photographer</h3>
+
+        <a href="#skills" class="btn-get-started scrollto">learn about me</a>
     </div>
 </section>
 
 <br>
 <br>
 
-<section id="hero1" class="d-flex flex-column justify-content-center align-items-center">
+<section id="skills" class="hero d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left aos-init aos-animate" data-aos="fade-up">
         <h1 class="title">TECH STACK</h1>
         <div class="skills-container" id="skills-container">
@@ -35,11 +35,11 @@
             </div>
             <br>
         </div>
-        <a href="#hero2" class="btn-get-started scrollto">see my life in motion</a>
+        <a href="#motion" class="btn-get-started scrollto">see my life in motion</a>
     </div>
 </section>
 
-<section id="hero2" class="d-flex flex-column justify-content-center align-items-center">
+<section id="motion" class="hero d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center text-md-left aos-init aos-animate" data-aos="fade-up">
         <h1>MY LIFE IN MOTION</h1>
         <div class="path-container" id="path-container">
@@ -86,22 +86,26 @@
                     <p>I'm now gearing up for a career in tech as a Software Engineer, and am looking for the right role.</p>
                 </div>
             </div>
-            <!--  make these buttons permanently underneath along with a resume download!!
-                <div class="life-event" data-description="portfolio line...">
-                <div class="description-box">
-                <h3 class="life-title">Please Reach Out!</h3>
-                <a href="/portfolio" class="btn-get-started scrollto">Portfolio</a>
-                <a href="/contact" class="btn-get-started scrollto">Contact</a>
-                </div>
-            </div> -->
         </div>
+        <a href="#resume" class="btn-get-started scrollto">Contact & Download Resume</a>
     </div>
 </section>
+
+<section id="resume" class="hero d-flex flex-column justify-content-center align-items-center">
+    <div class="container text-center text-md-left aos-init aos-animate" data-aos="fade-up">
+        <div>
+            <h1>Contact & Resume</h1>
+            <a href="/portfolio" class="btn-get-started scrollto">Portfolio</a>
+            <a href="/contact" class="btn-get-started scrollto">Contact</a>
+            <a href="static/maxim-pro/assets/img/Resume%207.3.23.pdf" class="download-button" download>Download Resume</a>
+        </div>
+    </div>
+</section>       
 <script src="static/maxim-pro/assets/js/scripts.js"></script>
 
 <style>
     body {
-        background-color: #f2dfbf;
+        background-color: #fbf9ec;
     }
 </style>
 

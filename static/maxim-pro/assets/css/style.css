@@ -300,10 +300,10 @@ h7 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+.hero {
   width: 100%;
   height: calc(100vh - 70px);
-  background-size: cover;
+  background-size: contain;
   background: url("/static/maxim-pro/assets/img/katewindow3.png") center center;
   position: relative;
   margin-bottom: 50vw;
@@ -311,17 +311,17 @@ h7 {
   overflow: hidden;
 }
 
-#hero h1 {
+.hero h1 {
   margin-top: 10vw;
   font-size: 5vw;
   font-weight: 700;
   line-height: 56px;
-  color: #4e3004;
+  color: #fbf9ec;
   font-style: "Raleway";
   margin-bottom: 4.5vw;
 }
 
-#hero .btn-get-started {
+.hero .btn-get-started {
   margin-top: 5vw;
   font-family: "CormorantGaramond";
   text-transform: uppercase;
@@ -337,109 +337,32 @@ h7 {
   background-color: #4e3004;
 }
 
-#hero .btn-get-started:hover {
+.hero .btn-get-started:hover {
   border-color: #c19974;
   background: #c19974;
 }
 
-#hero1 {
-  width: 100%;
-  height: calc(100vh - 70px);
-  background-size: cover;
-  background: url("/static/maxim-pro/assets/img/lakegrass.png") center center;
-  position: relative;
-  margin-bottom: 50vw;
-  padding: 0;
-  overflow: hidden;
+#title.hero {
+  background-image: url('/static/maxim-pro/assets/img/kategigi.png');
 }
 
-#hero1 h1 {
-  margin-top: 10vw;
-  font-size: 5vw;
-  font-weight: 700;
-  line-height: 56px;
-  color: #4e3004;
-  font-style: "Raleway";
-  margin-bottom: 4.5vw;
+#skills.hero {
+  background-image: url('/static/maxim-pro/assets/img/lakegrass.png');
 }
 
-#hero1 .btn-get-started {
-  margin-top: 5vw;
-  font-family: "CormorantGaramond";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 20px; 
-  transition: 0.5s;
-  border: 2px solid #4e3004;
-  color: #fbf9ec;
-  background-color: #4e3004;
+#motion.hero {
+  background-image: url('/static/maxim-pro/assets/img/oceanriver.png');
 }
 
-#hero1 .btn-get-started:hover {
-  border-color: #c19974;
-  background: #c19974;
-}
-
-#hero2 {
-  width: 100%;
-  height: calc(100vh - 70px);
-  background: url("/static/maxim-pro/assets/img/lakeboat.png") center center;
-  background-size: cover;
-  position: relative;
-  margin-top: 70px;
-  padding: 0;
-  overflow: hidden;
-}
-
-#hero2:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero2 h1 {
-  margin-top: 30vw;
-  font-size: 4.5vw;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fbf9ec;
-  font-style: Raleway;
-  margin-bottom: 10vw;
-}
-
-#hero2 .btn-get-started {
-  margin-top: 5vw;
-  font-family: "CormorantGaramond";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 20px; 
-  transition: 0.5s;
-  border: 2px solid #4e3004;
-  color: #fbf9ec;
-  background-color: #4e3004;
-}
-
-#hero2 .btn-get-started:hover {
-  border-color: #c19974;
-  background: #c19974;
+#resume.hero {
+  background-image: url('/static/maxim-pro/assets/img/lilacs.png');
+  margin-bottom: 0;
 }
 
 #hero5 {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("/static/maxim-pro/assets/img/terracota.png") center center;
+  background: url("/static/maxim-pro/assets/img/clovers.png") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
@@ -475,6 +398,7 @@ h7 {
 }
 
 #hero5 .btn-get-started {
+  margin-top: 5vw;
   font-family: "CormorantGaramond";
   text-transform: uppercase;
   font-weight: 500;
@@ -482,19 +406,17 @@ h7 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
-  border-radius: 4px;
+  border-radius: 20px; 
   transition: 0.5s;
-  border: 2px solid #fbf9ec;
+  border: 2px solid #4e3004;
   color: #fbf9ec;
+  background-color: #4e3004;
 }
 
 #hero5 .btn-get-started:hover {
-  border-color: #ba2a47;
-  background: #ba2a47;
+  border-color: #c19974;
+  background: #c19974;
 }
-
-
-
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -524,7 +446,7 @@ h7 {
 #hero6 {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("/static/maxim-pro/assets/img/orchids.png") center center;
+  background: url("/static/maxim-pro/assets/img/lakeboat.png") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
@@ -611,7 +533,6 @@ h7 {
   position: relative;  
   width: 100%;
   height: 15vw;  
-  margin-bottom: 30vw;
 }
 
 .life-event {
@@ -847,6 +768,7 @@ h7 {
 }
 
 .download-button {
+  margin-top: 5vw;
   font-family: "CormorantGaramond";
   text-transform: uppercase;
   font-weight: 500;
@@ -854,11 +776,16 @@ h7 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
-  border-radius: 4px;
+  border-radius: 20px; 
   transition: 0.5s;
-  border: 2px solid #ba2a47;
-  background: #ba2a47;
+  border: 2px solid #4e3004;
   color: #fbf9ec;
+  background-color: #4e3004;
+}
+
+.download-button:hover {
+  border-color: #c19974;
+  background: #c19974;
 }
 
 .project-link {
