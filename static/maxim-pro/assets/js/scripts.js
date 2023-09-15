@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function slideIn() {
         if (currentIndex >= events.length) {
-            return;
+            currentIndex = 0;  // Reset to the start to repeat
         }
 
         // Slide the current item into the frame
@@ -13,11 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Wait for a while and then slide out
         setTimeout(slideOut, 7000);  // 7 seconds, adjust as needed
     }
-
-        // If this is the last event, don't schedule a slideOut
-        if (currentIndex === events.length - 1) {
-            return;
-        }
 
     function slideOut() {
         events[currentIndex].style.left = '100%';

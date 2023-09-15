@@ -16,9 +16,9 @@ max_uses = 50
 
 
 @app.route('/')
-def homepage_game():
+def homepage():
     """Show Homepage"""
-    return render_template("homepage_game.html")
+    return render_template("homepage.html")
 
 @app.route('/contact')
 def faq():
