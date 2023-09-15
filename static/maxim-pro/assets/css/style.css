@@ -46,7 +46,6 @@ h4 {
   color: #fbf9ec;
 }
 
-h2,
 h5,
 h6 {
   font-family: "DM sans";
@@ -300,15 +299,46 @@ h7 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
-  width: 100%;
-  height: calc(100vh - 70px);
-  background-size: contain;
-  background: url("/static/maxim-pro/assets/img/katewindow3.png") center center;
+
+#title.hero {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
-  margin-bottom: 50vw;
-  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  padding-left: 35%; 
+  padding-bottom: 20%; 
+  margin-bottom: 10vw;
+  margin-top: 4vw;
   overflow: hidden;
+  background-image: url('/static/maxim-pro/assets/img/katetrees2.jpg');
+}
+
+#title.hero h1 {
+  margin-top: 25vw;
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: 4vw;
+  color: #fbf9ec;
+  font-style: "Raleway";
+  margin-bottom: 2vw;
+  position: relative;
+  z-index: 2;
+  margin-right: 10%;
+}
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-size: contain;
+    background: url("/static/maxim-pro/assets/img/katewindow3.png") center center;
+    position: relative;
+    margin-bottom: 10vw;
+    padding: 0;
+    overflow: hidden;
 }
 
 .hero h1 {
@@ -319,6 +349,20 @@ h7 {
   color: #fbf9ec;
   font-style: "Raleway";
   margin-bottom: 4.5vw;
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  margin-top: 10vw;
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: 56px;
+  color: #7b4c05;
+  font-style: "Raleway";
+  margin-bottom: 4.5vw;
+  position: relative;
+  z-index: 2;
 }
 
 .hero .btn-get-started {
@@ -340,10 +384,6 @@ h7 {
 .hero .btn-get-started:hover {
   border-color: #c19974;
   background: #c19974;
-}
-
-#title.hero {
-  background-image: url('/static/maxim-pro/assets/img/kategigi.png');
 }
 
 #skills.hero {
@@ -663,6 +703,11 @@ h7 {
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
 .begin {
   background-color: #fbf9ec;
   padding: 100px 0px 400px 0px;
@@ -691,7 +736,7 @@ h7 {
   margin-left: 60px;
 }
 
-.bell-button {
+/* .bell-button {
   display: inline-block;
   align-items: center;
   padding: 0;
@@ -753,18 +798,32 @@ h7 {
 .container label:hover img,
 .container label input[type="radio"]:checked + img {
   transform: scale(1.2);
-}
+} */
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 5px; /* Adjust the gap as needed */
-  align-items: stretch;
-  justify-items: stretch;
-  max-width: 90vw;
-  max-height: 90vw;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allows items to wrap onto the next line */
   margin-top: 10vw;
   margin-bottom: 5vw;
+}
+
+.project-link {
+  flex: 1 1 calc(33.33% - 10px); /* 1 1 means it can grow and shrink, 33.33% for 3 items, and we subtract 10px for gaps */
+  margin: 5px; /* This creates a gap between items */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  text-align: center; /* Center text in the children */
+}
+
+.project-image {
+  width: 100%; /* occupy full width of its container */
+  height: 30vw; 
+  background-size: cover;
+}
+
+.project-title {
+  margin-top: 1vw;
 }
 
 .download-button {
@@ -803,17 +862,17 @@ h7 {
   font-family: "Raleway";
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 2vw;
   letter-spacing: 1px;
   text-align: center;
   padding: 10px 0;
-  transform: translateY(100%); /* Push it below the image initially */
-  transition: transform 0.3s ease; /* Animation effect */
+  transform: translateY(100%); 
+  transition: transform 0.3s ease; 
   opacity: 0;
 }
 
 .project-link:hover .project-title {
-  transform: translateY(0); /* Pull it back to cover the image bottom */
+  transform: translateY(0); 
   opacity: 1;
 }
 

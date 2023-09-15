@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         events[currentIndex].style.left = '15vw';
 
         // Wait for a while and then slide out
-        setTimeout(slideOut, 7000);  // 7 seconds, adjust as needed
+        setTimeout(slideOut, 4000); 
     }
 
     function slideOut() {
@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
         currentIndex++;
 
         // Wait for a while and then slide in the next item
-        setTimeout(slideIn, 1000);  // 1 second delay, adjust as needed
+        setTimeout(slideIn, 500);  
     }
 
         // Start the cycle with a 2-second delay before the first slide-in
-        setTimeout(slideIn, 2000);
+        setTimeout(slideIn, 5000);
 });
 
 
