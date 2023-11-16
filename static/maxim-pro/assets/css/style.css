@@ -17,16 +17,6 @@ body {
   background-color: #1a1a18;
 }
 
-a {
-  color: #571421;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ba2a47;
-  text-decoration: none;
-}
-
 h1 {
   font-size: 6vw; 
   font-family: "Space Mono";
@@ -56,7 +46,11 @@ h4 {
   color: #1a1a18;
 }
 
-
+h5 {
+  font-size: 6vw; 
+  font-family: "Space Mono";
+  color: #1a1a18;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -253,7 +247,7 @@ h4 {
   text-align: left;
 }
 
-.hero .btn-get-started:hover {
+#title.hero .btn-get-started:hover {
   border-color: #440848;
   background: transparent; 
   color: #440848; 
@@ -269,16 +263,30 @@ h4 {
   font-family: "Space Mono";
   text-transform: lowercase;
   font-weight: 500;
-  font-size: 3vw;      /* Already using vw */
+  font-size: 3vw;     
   letter-spacing: 0.1vw;
-  padding: 1vw 2vw;    /* Adjusted to vw */
+  padding: 0.5vw 0.1vw;    
+  width: auto;
   transition: all 0.5s;
   border: none;
   color: #0d0800;
   background-color: #51b096;
   text-align: left;
-  border-radius: 1vw;  /* Adjusted to vw */
+  border-radius: 1vw;  
 }
+
+.hero .btn-get-started:hover {
+  background: #b742c6; 
+}
+
+#portfolio.hero .btn-get-started {
+  position: absolute;
+  bottom: 0.5vw;  /* Adjust as needed for spacing from the bottom */
+  left: 50%;    /* Position 50% from the left */
+  transform: translateX(-50%); 
+  text-align: center; 
+}
+
 #contact .container > div {
   display: flex;
   justify-content: center; /* Align buttons in the center */
@@ -567,81 +575,16 @@ h4 {
   margin: 0 auto; /* Center the grid container horizontally */
 }
 
-.social-links a {
-  font-size: 50px;
-  display: inline-block;
-  background: #7b4c05;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 70px;
-  height: 70px;
-  transition: 0.3s;
-}
-
-.social-links a:hover {
-  background: #c0760661;
-  color: #fff;
-  text-decoration: none;
-}
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #a96805;
+  background: #51b097;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
-  border-color: #995e06;
-}
-
-#footer .footer-top {
-  background: #ecd2ac;
-  border-bottom: 1px solid #ecd2ac;
-  padding: 60px 0 30px 0;
-  border-color: #ecd2ac;
-}
-
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-info h4 {
-  font-size: 28px;
-  color: #fbf9ec;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 700;
-}
-
-#footer .footer-top .footer-info h5 {
-  font-size: 18px;
-  color: #fbf9ec;
-  margin: 0 0 2px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 200;
-}
-
-#footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "CormorantGaramond";
-  color: #fff;
-}
-
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: 600;
-  color: black;
-  position: relative;
-  padding-bottom: 12px;
+  border-color: #51b097ad;
 }
 
 #footer .footer-top .footer-links {
@@ -683,14 +626,24 @@ h4 {
 }
 
 
-#footer .copyright {
+
+.social-links a {
+  font-size: 50px;
+  display: inline-block;
+  background: #0d0800;
+  color: #51b096;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
   text-align: center;
-  padding-top: 30px;
+  width: 70px;
+  height: 70px;
+  transition: 0.3s;
 }
 
-#footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
+.social-links a:hover {
+  background: #c0760661;
   color: #fff;
+  text-decoration: none;
 }
