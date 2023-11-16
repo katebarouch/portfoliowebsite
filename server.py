@@ -9,11 +9,6 @@ app = Flask(__name__)
 app.secret_key = "dev"
 app.jinja_env.undefined = StrictUndefined
 
-# Store the current month and the number of uses
-current_month = datetime.now().month
-use_count = 0
-max_uses = 50
-
 
 @app.route('/')
 def homepage():
