@@ -181,7 +181,7 @@ h5 {
 
 .hero {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: 70vh;
     background-size: contain;
     position: relative;
     margin-bottom: 10vw;
@@ -534,7 +534,7 @@ h5 {
 
   /* Increase font size for buttons */
   .btn-get-started {
-    font-size: 10vw;
+    font-size: 15vw;
     padding: 1vw 2vw; /* Increase padding for buttons */
   }
 
