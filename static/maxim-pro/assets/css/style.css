@@ -53,41 +53,6 @@ h5 {
 }
 
 /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #ba2a47;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fbf9ec;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #ba2a47;
-  color: #fbf9ec;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-
-/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
@@ -124,9 +89,6 @@ h5 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
 .navbar {
   padding: 0;
 }
@@ -195,7 +157,7 @@ h5 {
 
 #title.hero {
   width: 100vw;
-  height: 100vh; /* Adjust the height to cover the full viewport height */
+  height: 100vh; 
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -209,11 +171,11 @@ h5 {
 
 #heroVideo {
   position: absolute;
-  top: 1vw; /* Align top edge with the container's top */
-  left: 0; /* Align left edge with the container's left */
-  width: 100%; /* Set width to cover the container */
-  height: 100%; /* Set height to cover the container */
-  object-fit: cover; /* Cover the container, cutting off excess video */
+  top: 1vw; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
   z-index: -1;
 }
 
@@ -366,68 +328,6 @@ h5 {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #fbf9ec;
-  min-height: 40px;
-  margin-top: 72px;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 60px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 0;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
@@ -546,7 +446,6 @@ h5 {
   margin: 0 auto; /* Center the grid container horizontally */
 }
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -617,4 +516,107 @@ h5 {
   background: #c0760661;
   color: #fff;
   text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Mobile
+--------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  /* Adjustments for screens up to 768px wide */
+  body {
+    font-size: 16px; /* Adjust the base font size */
+  }
+
+  h1 {
+    font-size: 4vw; /* Decrease the font size for h1 */
+  }
+
+  h2 {
+    font-size: 6vw; /* Decrease the font size for h2 */
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove margin */
+  }
+
+  h3 {
+    font-size: 3vw; /* Decrease the font size for h3 */
+  }
+
+  h4 {
+    font-size: 2vw; /* Decrease the font size for h4 */
+  }
+
+  h5 {
+    font-size: 4vw; /* Decrease the font size for h5 */
+  }
+
+  /* Adjustments for back-to-top button */
+  .back-to-top {
+    bottom: 10px; /* Move the button up */
+    right: 10px; /* Move the button closer to the right edge */
+    width: 30px; /* Decrease the button size */
+    height: 30px; /* Decrease the button size */
+  }
+
+  .back-to-top i {
+    font-size: 20px; /* Decrease the icon size */
+  }
+
+  /* Adjustments for header */
+  #header {
+    height: auto; /* Make the header height adjust automatically */
+  }
+
+  #header .logo h1 {
+    font-size: 24px; /* Decrease the logo font size */
+  }
+
+  /* Adjustments for navigation menu */
+  .navbar ul {
+    flex-direction: column; /* Stack the menu items vertically */
+  }
+
+  .navbar li {
+    margin-left: 0; /* Remove margin between menu items */
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    padding: 10px 0; /* Decrease the padding for menu items */
+  }
+
+  .navbar>ul>li+a:before {
+    bottom: 0; /* Adjust the underline position */
+  }
+
+  /* Adjustments for hero section */
+  #title.hero {
+    padding-left: 0; /* Remove left padding */
+    padding-bottom: 10%; /* Decrease the padding at the bottom */
+  }
+
+  #title.hero .btn-get-started {
+    font-size: 4vw; /* Decrease the font size for the button */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 3vw; /* Decrease the bottom margin */
+  }
+
+  /* Adjustments for portfolio section */
+  .project-link {
+    flex: 1 1 100%; /* Make portfolio items take full width */
+  }
+
+  .project-title,
+  .project-description {
+    font-size: 3vw; /* Decrease font size for titles and descriptions */
+    padding: 2vw; /* Adjust padding */
+  }
+
+  .project-link:hover .project-title {
+    transform: translateY(0); /* Reset transformation on hover */
+  }
+
+  .project-link:hover .project-description {
+    transform: translateY(0); /* Reset transformation on hover */
+  }
 }

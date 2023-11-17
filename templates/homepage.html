@@ -63,6 +63,21 @@
 
 <script src="static/maxim-pro/assets/js/scripts.js"></script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var video = document.getElementById("heroVideo");
+
+    // Check if it's a mobile device
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      // Play the video
+      video.play().catch(function (error) {
+        // Handle any autoplay errors here
+        console.error("Autoplay failed:", error);
+      });
+    }
+  });
+</script>
+
 
 
 {% endblock %}
