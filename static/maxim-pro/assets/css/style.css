@@ -522,101 +522,52 @@ h5 {
 # Mobile
 --------------------------------------------------------------*/
 
+/* Add this at the end of your CSS file */
+
 @media (max-width: 768px) {
   /* Adjustments for screens up to 768px wide */
-  body {
-    font-size: 16px; /* Adjust the base font size */
+  
+  /* Remove the navbar */
+  .navbar {
+    display: none;
   }
 
-  h1 {
-    font-size: 4vw; /* Decrease the font size for h1 */
+  /* Increase font size for buttons */
+  .btn-get-started {
+    font-size: 3vw;
+    padding: 1vw 2vw; /* Increase padding for buttons */
   }
 
-  h2 {
-    font-size: 6vw; /* Decrease the font size for h2 */
-    text-align: center; /* Center the text */
-    margin: 0; /* Remove margin */
-  }
-
-  h3 {
-    font-size: 3vw; /* Decrease the font size for h3 */
-  }
-
-  h4 {
-    font-size: 2vw; /* Decrease the font size for h4 */
-  }
-
-  h5 {
-    font-size: 4vw; /* Decrease the font size for h5 */
-  }
-
-  /* Adjustments for back-to-top button */
-  .back-to-top {
-    bottom: 10px; /* Move the button up */
-    right: 10px; /* Move the button closer to the right edge */
-    width: 30px; /* Decrease the button size */
-    height: 30px; /* Decrease the button size */
-  }
-
-  .back-to-top i {
-    font-size: 20px; /* Decrease the icon size */
-  }
-
-  /* Adjustments for header */
-  #header {
-    height: auto; /* Make the header height adjust automatically */
-  }
-
-  #header .logo h1 {
-    font-size: 24px; /* Decrease the logo font size */
-  }
-
-  /* Adjustments for navigation menu */
-  .navbar ul {
-    flex-direction: column; /* Stack the menu items vertically */
-  }
-
-  .navbar li {
-    margin-left: 0; /* Remove margin between menu items */
-  }
-
-  .navbar a,
-  .navbar a:focus {
-    padding: 10px 0; /* Decrease the padding for menu items */
-  }
-
-  .navbar>ul>li+a:before {
-    bottom: 0; /* Adjust the underline position */
-  }
-
-  /* Adjustments for hero section */
+  /* Adjust hero section */
   #title.hero {
-    padding-left: 0; /* Remove left padding */
-    padding-bottom: 10%; /* Decrease the padding at the bottom */
+    padding-left: 0;
+    padding-bottom: 5%; /* Decrease the padding at the bottom */
   }
 
   #title.hero .btn-get-started {
-    font-size: 4vw; /* Decrease the font size for the button */
-    margin-right: 0; /* Remove right margin */
-    margin-bottom: 3vw; /* Decrease the bottom margin */
+    font-size: 4vw;
+    margin-right: 0;
+    margin-bottom: 3vw;
   }
 
-  /* Adjustments for portfolio section */
-  .project-link {
-    flex: 1 1 100%; /* Make portfolio items take full width */
+  /* Adjust the "software engineer" text */
+  .hero-image {
+    max-width: 80%; /* Adjust the width of the image */
+  }
+  
+  /* Adjust the position of the text */
+  .hero-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
   }
 
-  .project-title,
-  .project-description {
-    font-size: 3vw; /* Decrease font size for titles and descriptions */
-    padding: 2vw; /* Adjust padding */
-  }
-
-  .project-link:hover .project-title {
-    transform: translateY(0); /* Reset transformation on hover */
-  }
-
-  .project-link:hover .project-description {
-    transform: translateY(0); /* Reset transformation on hover */
+  /* Increase the font size of the text */
+  .hero-text h2 {
+    font-size: 5vw;
   }
 }
+
