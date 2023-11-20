@@ -534,7 +534,7 @@ h5 {
 
   /* Increase font size for buttons */
   .btn-get-started {
-    font-size: 25vw;
+    font-size: 15vw !important;
     padding: 1vw 2vw; /* Increase padding for buttons */
   }
 
@@ -542,8 +542,8 @@ h5 {
   #title.hero {
     padding-left: 0;
     padding-bottom: 5%; /* Decrease the padding at the bottom */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: flex-start; /* Center content horizontally */
+    align-items: flex-start; /* Center content vertically */
   }
 
   #title.hero .btn-get-started {
