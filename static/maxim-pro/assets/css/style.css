@@ -534,7 +534,7 @@ h5 {
 
   /* Increase font size for buttons */
   .btn-get-started {
-    font-size: 15vw !important;
+    font-size: 10vw !important;
     padding: 1vw 2vw; /* Increase padding for buttons */
   }
 
