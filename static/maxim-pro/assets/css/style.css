@@ -219,7 +219,7 @@ h5 {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-top: 0;
+  margin-top: 1vh;
   margin-bottom: 3vw;  
   margin-right: 10vw;  
   font-family: "Space Mono";
@@ -534,7 +534,7 @@ h5 {
 
   /* Increase font size for buttons */
   .btn-get-started {
-    font-size: 15vw;
+    font-size: 25vw;
     padding: 1vw 2vw; /* Increase padding for buttons */
   }
 
@@ -542,6 +542,8 @@ h5 {
   #title.hero {
     padding-left: 0;
     padding-bottom: 5%; /* Decrease the padding at the bottom */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
   }
 
   #title.hero .btn-get-started {
